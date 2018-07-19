@@ -1,20 +1,15 @@
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
-
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+import React, { Component } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
 type Props = {};
 export default class App extends Component<Props> {
   render() {
+    const bool = true;
     return (
       <View style={styles.container}>
         <Text style={{fontSize: 20}}>Here You will be learning Redux</Text>
-      </View>
+        { bool && <Text>Kamal is Checking Conditional Statement</Text> }
+        </View>
     );
   }
 }
